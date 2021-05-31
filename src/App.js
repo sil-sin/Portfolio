@@ -18,7 +18,7 @@ function App(props) {
 
   useEffect(() => {
     localStorage.setItem("modeSwitch", modeSwitch)
-
+    updateFetching(false)
   }, [modeSwitch])
 
   const handleTheme = () => {
