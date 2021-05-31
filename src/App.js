@@ -1,10 +1,9 @@
 
 import './App.css';
-import { Switch, Route, withRouter, Link } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 import { useState } from 'react';
 import Homepage from './components/Homepage';
 import { useEffect } from 'react';
-import { Container } from 'react-bootstrap';
 import Mynav from './components/Mynav';
 
 
