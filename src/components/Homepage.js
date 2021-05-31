@@ -29,17 +29,17 @@ export default function Homepage(props) {
 
             <section id='about' >
                 <div className='aboutTxt'>
-                    <h2> About Me</h2>
-                    <h4>My Name is Silvi. I am from Albania, based in Berlin. Since I was a little boy, I've been a game lover and a computer geek.
-                    Not knowing I could use those skills to build a career, I didn't choose this as a path and gravitated toward
-                    criminalistics studies and jobs in the tourism industry. But I kind of just felt meh.
-                    I then decided it was time to follow my passion and make the transition into web development.
-                    The Ironhack Full-Stack Web Development Bootcamp was the obvious choice to start. And I loved it all from the beginning.
-                    When I built my first game from scratch, using HTML, Cascading Style Sheets (CSS), and JavaScript,
-                    I knew I was in the right place. And from there the excitement and passion for coding just increased.
-                    I find it fascinating to transform coding into well-designed and fully functional websites and applications.
-                    I love the idea of using software to solve practical problems.
-                    I am looking forward to using my skills to help companies create state of the art products.</h4>
+                    <h1> Hello, I'm Silvi. Nice to meet you.
+                    </h1>
+                    <h4>I am from Berat(Albania), based in Berlin. Since a little kid,
+                    I have always been fascinated by technology. I have been a gamer and a computer geek since forever.<br />
+                    In my previous experiences, I've worked with different software, from video/subtitle/photo editing programs to CRM software.
+                    While working in the tourism industry as a Tour Organiser and Content Creator, I would catch myself also building websites
+                    using builders from WordPress, Wix, or GoDaddy. I felt like it was time for me to finally follow my true passion.<br />
+                    Ironhack Full Stack Web Development Bootcamp was one of the best experiences of my life.
+                    Had incredible teachers and met amazing creative people.I build my first game using HTML,JS,CSS, and  together with my classmates build fully
+                    functional back end and fullstack webapps.<br /> Now I'm looking for an oportunity to pursue a career as a web developer
+                    ,to help create beautiful websites and transform my passion into a profession.</h4>
 
                 </div>
                 <Link id='linkCv' className='shake' to='../Silvi-Sinanaj-CV.pdf' target="_blank" download><b>Download CV</b></Link>
@@ -102,12 +102,12 @@ export default function Homepage(props) {
             </div>
             <div id='contactMe'>
                 <h1> Lets get in contact</h1>
-                <div id='icons'><a target="_blank" href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn /></a>
-                    <a target="_blank" href='https://https://github.com/sil-sin' rel="noreferrer"><GitHub /></a>
-                    <a target="_blank" href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter /></a>
-                    <a className='shake' target="_blank" href='mailto:silviberat@gmail.com' rel="noreferrer"><Email /></a>
-                    <a target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /></a>
-                    <a target="_blank" href='tel:4917671613833' rel="noreferrer"><Call /></a></div>
+                <div id='icons'><a target="_blank" href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn />LinkedIn</a>
+                    <a target="_blank" href='https://https://github.com/sil-sin' rel="noreferrer"><GitHub />GitHub</a>
+                    <a target="_blank" href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter />Twitter</a>
+                    <a className='shake' target="_blank" href='mailto:silviberat@gmail.com' rel="noreferrer"><Email />Email</a>
+                    <a target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp />WhatsApp</a>
+                    <a target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call />Call</a></div>
             </div>
             <footer> <a href='mailto:silviberat@gmail.com'>silviberat@gmail.com</a>© <b>Silvi Sinanaj</b>. All Rights Reserved.</footer>
         </div>
