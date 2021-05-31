@@ -102,12 +102,12 @@ export default function Homepage(props) {
             </div>
             <div id='contactMe'>
                 <h1> Lets get in contact</h1>
-                <div id='icons'><a target="_blank" href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn />LinkedIn</a>
-                    <a target="_blank" href='https://https://github.com/sil-sin' rel="noreferrer"><GitHub />GitHub</a>
-                    <a target="_blank" href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter />Twitter</a>
-                    <a className='shake' target="_blank" href='mailto:silviberat@gmail.com' rel="noreferrer"><Email />Email</a>
-                    <a target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp />WhatsApp</a>
-                    <a target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call />Call</a></div>
+                <div id='icons'><a target="_blank" href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn /><br />LinkedIn</a>
+                    <a target="_blank" href='https://https://github.com/sil-sin' rel="noreferrer"><GitHub /><br />GitHub</a>
+                    <a target="_blank" href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter /><br />Twitter</a>
+                    <a className='shake' target="_blank" href='mailto:silviberat@gmail.com' rel="noreferrer"><Email /><br />Email</a>
+                    <a target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /><br />WhatsApp</a>
+                    <a target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call /><br />Call</a></div>
             </div>
             <footer> <a href='mailto:silviberat@gmail.com'>silviberat@gmail.com</a>© <b>Silvi Sinanaj</b>. All Rights Reserved.</footer>
         </div>
