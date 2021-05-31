@@ -9,6 +9,7 @@ import Mynav from './components/Mynav';
 
 function App(props) {
   const [modeSwitch, UpdateSwitch] = useState('dark')
+  const [fetching, updateFetching] = useState(true)
 
   useEffect(() => {
     const parsedMode = localStorage.getItem("modeSwitch") || 0
@@ -17,6 +18,7 @@ function App(props) {
 
   useEffect(() => {
     localStorage.setItem("modeSwitch", modeSwitch)
+    updateFetching(false)
   }, [modeSwitch])
 
   const handleTheme = () => {
@@ -26,7 +28,10 @@ function App(props) {
       UpdateSwitch('light')
     }
   }
-
+  if (fetching) {
+    <p> Loading ...</p>
+  }
+  console.log(modeSwitch)
   return (
     <div fluid="md" className={`${modeSwitch} body`}>
       <Mynav modeSwitch={modeSwitch} onClick={handleTheme} />
