@@ -14,7 +14,6 @@ function App(props) {
   useEffect(() => {
     const parsedMode = localStorage.getItem("modeSwitch") || 0
     UpdateSwitch(parsedMode)
-    updateFetching(false)
   }, [])
 
   useEffect(() => {
@@ -29,10 +28,11 @@ function App(props) {
       UpdateSwitch(null)
     }
   }
+
   if (fetching) {
-    <p> Loading ...</p>
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_e8Sg3j.json" background="transparent" speed="1" style={{ width: '300px', height: '300px' }}
+      controls autoplay></lottie-player>
   }
-  console.log(modeSwitch)
   return (
     <div fluid="md" className={`${modeSwitch} body`}>
       <Mynav modeSwitch={modeSwitch} onClick={handleTheme} />

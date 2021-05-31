@@ -200,7 +200,6 @@ header {
 }
 #logoSS {
   position: absolute;
-  border-radius: 30%;
   left: 0 !important;
   top: 7px !important;
   width: 50px;
@@ -275,6 +274,11 @@ header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+#icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 footer {
   text-align: center;
