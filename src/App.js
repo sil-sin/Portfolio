@@ -8,24 +8,25 @@ import Mynav from './components/Mynav';
 
 
 function App(props) {
-  const [modeSwitch, UpdateSwitch] = useState('dark')
+  const [modeSwitch, UpdateSwitch] = useState(null)
   const [fetching, updateFetching] = useState(true)
 
   useEffect(() => {
     const parsedMode = localStorage.getItem("modeSwitch") || 0
     UpdateSwitch(parsedMode)
+    updateFetching(false)
   }, [])
 
   useEffect(() => {
     localStorage.setItem("modeSwitch", modeSwitch)
-    updateFetching(false)
+
   }, [modeSwitch])
 
   const handleTheme = () => {
-    if (modeSwitch === 'light') {
+    if (!modeSwitch) {
       UpdateSwitch('dark')
     } else {
-      UpdateSwitch('light')
+      UpdateSwitch(null)
     }
   }
   if (fetching) {

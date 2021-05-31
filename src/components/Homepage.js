@@ -57,10 +57,10 @@ export default function Homepage(props) {
                         using our newly learned programming languages. The game is a Pokemon themed 2D side scroller with increasing difficulty and different
                         levels.
                         </p>
-                        <div className=' linksProject' >
+                        <span className=' linksProject' >
                             <a className='projectLink' href='https://sil-sin.github.io/Gotta-Win-Em-All/' target="_blank" rel="noreferrer" ><b>Website Link</b></a>
                             <a className='projectLink' href='https://github.com/sil-sin/Gotta-Win-Em-All' target="_blank" rel="noreferrer" ><b>Github Repository</b></a>
-                        </div>
+                        </span>
                     </div>
                     <div className='projectCards shake'>
                         <h2>Silver Tasker</h2>
@@ -69,10 +69,10 @@ export default function Homepage(props) {
                         <h4>[Handlebars] [CSS] [NodeJS] [ExpressJS] [MongoDB] [Bootstrap]</h4>
                         <p>Silver Tasker web application, is a task managing system build with the hotel business model in mind.
                          Using this application, the managers can create and assign tasks to their staff members and keep track of the task status.</p>
-                        <div className=' linksProject'>
+                        <span className=' linksProject'>
                             <a className='projectLink' href='https://silver-tasker.herokuapp.com' target="_blank" rel="noreferrer" ><b>Website Link</b></a>
                             <a className='projectLink' href='https://github.com/sil-sin/Silver-Tasker' target="_blank" rel="noreferrer" ><b>Github Repository</b></a>
-                        </div>
+                        </span>
 
                     </div>
                     <div className='projectCards shake'>
@@ -83,11 +83,11 @@ export default function Homepage(props) {
                         <p>This is the final project of my Bootcamp. FoodCafe is a full-stack web app.
                         It's a cozy environment for people to connect around the common interest of food.
                         Users can create their profile,   can find, create, edit, or delete  recipes, and post about their food.</p>
-                        <div className=' linksProject'>
+                        <span className=' linksProject'>
                             <a className='projectLink' href='https://food-cafe.herokuapp.com/' target="_blank" rel="noreferrer" ><b>Website Link</b></a><br />
                             <a className='projectLink' href='https://github.com/jnmelio/FoodCafe-client' target="_blank" rel="noreferrer" ><b>Client Repository</b></a>
                             <a className='projectLink' href='https://github.com/jnmelio/FoodCafe-server' target="_blank" rel="noreferrer" ><b>Server Repository</b></a>
-                        </div>
+                        </span>
                     </div>
                 </div>
             </section>
