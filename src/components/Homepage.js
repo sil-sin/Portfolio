@@ -97,8 +97,8 @@ export default function Homepage(props) {
                 <a className='shake' target="_blank" href='https://github.com/sil-sin' rel="noreferrer"><GitHub /></a>
                 <a className='shake' target="_blank" href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter /></a>
                 <a className='shake' target="_blank" href='mailto:silviberat@gmail.com' rel="noreferrer"><Email /></a>
-                <a target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /></a>
-                <a target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call /></a>
+                <a className='shake' target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /></a>
+                <a className='shake' target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call /></a>
             </div>
             <div id='contactMe'>
                 <h1> Lets get in contact</h1>
