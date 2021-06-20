@@ -47,6 +47,7 @@ function App(props) {
           return <Homepage modeSwitch={modeSwitch} {...routeProps} />
         }} />
       </Switch>
+
     </div>
   );
 }

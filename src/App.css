@@ -13,6 +13,7 @@ body {
     rgba(222, 235, 255, 0.5) 100%
   );
   height: 100%;
+  width: 100% !important;
 }
 .dark {
   color: rgb(222, 237, 255);
@@ -27,11 +28,6 @@ body {
 nav {
   color: rgb(31, 31, 49);
   background: rgb(255, 255, 255);
-  /* background: linear-gradient(
-    180deg,
-    rgb(222, 235, 255) 100%,
-    rgb(255, 255, 255) 27%
-  ); */
   border-bottom: 1px solid rgb(31, 31, 49);
 }
 a {
@@ -53,7 +49,7 @@ a {
   margin: 10px;
   color: rgb(222, 237, 255) !important;
 }
-.come-in {
+/* .come-in {
   transform: translateX(250px);
   animation: come-in 1s ease forwards;
 }
@@ -65,7 +61,7 @@ a {
   to {
     transform: translateY(0);
   }
-}
+} */
 
 @keyframes shake {
   10%,
@@ -140,13 +136,14 @@ a {
   padding: 20px;
   margin-top: 60px;
 }
-.dark header {
+
+.dark #header {
   display: flex;
   justify-content: center;
   background: linear-gradient (59deg #03539e, #4e5a5ad2);
   background-color: #fadebe23;
 }
-header {
+#header {
   display: flex;
   justify-content: center;
   background: linear-gradient (59deg #03539e, #4e5a5ad2);
@@ -273,6 +270,9 @@ header {
   .socials {
     width: 28px;
   }
+  html {
+    width: 180% !important;
+  }
 }
 #contactMe {
   display: flex;
@@ -296,4 +296,7 @@ header {
 footer {
   text-align: center;
   padding-bottom: 40px;
+}
+#top {
+  width: 100% !important;
 }

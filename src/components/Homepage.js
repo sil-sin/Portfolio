@@ -13,7 +13,7 @@ export default function Homepage(props) {
     }
     return (
         <div id='top' className={modeSwitch}>
-            <header>
+            <div id='header'>
                 <div className='sectionCard ' >
                     <div className="hex center" data-aos="fade-zoom-in" >
                         <div className="hex__shape">
@@ -31,7 +31,7 @@ export default function Homepage(props) {
                     HTML | CSS | Flexbox | Bootstrap | Material-ui |
                     Javascript (ES6) | React | NodeJS | ExpressJS | MongoDB |
                     Git | GitHub | Trello |</div>
-            </header>
+            </div>
 
             <section id='about' >
                 <div className='aboutTxt'>
