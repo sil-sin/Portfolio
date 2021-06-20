@@ -15,7 +15,7 @@ body {
   height: 100%;
 }
 .dark {
-  color: rgb(235, 220, 220);
+  color: rgb(222, 237, 255);
   background: rgb(2, 21, 37, 1);
   background: linear-gradient(
     180deg,
@@ -27,11 +27,11 @@ body {
 nav {
   color: rgb(31, 31, 49);
   background: rgb(255, 255, 255);
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgb(222, 235, 255) 100%,
     rgb(255, 255, 255) 27%
-  );
+  ); */
   border-bottom: 1px solid rgb(31, 31, 49);
 }
 a {
@@ -40,7 +40,7 @@ a {
   color: rgb(31, 31, 49);
 }
 .dark nav {
-  color: darkgray !important;
+  color: rgb(222, 237, 255) !important;
   background: rgba(2, 21, 37);
   background: linear-gradient(
     0deg,
@@ -51,7 +51,20 @@ a {
 .dark a {
   font-weight: bolder;
   margin: 10px;
-  color: darkgray !important;
+  color: rgb(222, 237, 255) !important;
+}
+.come-in {
+  transform: translateX(250px);
+  animation: come-in 1s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1s;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes shake {

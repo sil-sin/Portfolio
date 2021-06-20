@@ -5,11 +5,17 @@ import { useState } from 'react';
 import Homepage from './components/Homepage';
 import { useEffect } from 'react';
 import Mynav from './components/Mynav';
-
+import 'aos';
+import Aos from 'aos';
 
 function App(props) {
   const [modeSwitch, UpdateSwitch] = useState(null)
   const [fetching, updateFetching] = useState(true)
+
+  Aos.init({
+    duration: 1500,
+
+  });
 
   useEffect(() => {
     const parsedMode = localStorage.getItem("modeSwitch") || 0
