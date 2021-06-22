@@ -25,27 +25,79 @@ export default function Homepage(props) {
                         </div>
                     </div>
 
-                    <h1>Hello!<br></br> I am Silvi Sinanaj</h1>
-                    <h4>Full (MERN) Stack Web Developer</h4>
-                    <h4>Technologies I work with</h4>
-                    HTML | CSS | Flexbox | Bootstrap | Material-ui |
-                    Javascript (ES6) | React | NodeJS | ExpressJS | MongoDB |
-                    Git | GitHub | Trello |</div>
+                    <h1>Silvi Sinanaj</h1>
+                    <h2>Full (MERN) Stack Web Developer</h2>
+                    <h3>Technologies I work with</h3>
+                    <div className='techIcons'>
+                        <div><img src='../icons/HTML5.svg' alt='html' />
+                            <h2>HTML</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/CSS3.svg' alt='css' />
+                            <h2>CSS</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/Javascript.svg' alt='JavaScript' />
+                            <h2>JavaScript</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/mongodb.svg' alt='MongoDB' />
+                            <h2>MongoDB</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/expressjs.svg' alt='ExpressJS' />
+                            <h2>ExpressJS</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/reactjs.svg' alt='ReactJS' />
+                            <h2>ReactJS</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/nodejs.svg' alt='NodeJS' />
+                            <h2>NodeJS</h2>
+                        </div>
+
+                        <div>
+                            <img src='../icons/bootstrap.svg' alt='Bootstrap' />
+                            <h2>Bootstrap</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/materialui.svg' alt='Material-UI' />
+                            <h2>Material UI</h2>
+                        </div>
+                        <div>
+                            <img src='../icons/git.svg' alt='Git' />
+                            <h2>Git</h2>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
             <section id='about' >
                 <div className='aboutTxt'>
-                    <h1> Hello, I'm Silvi. Nice to meet you.
+                    <h1> Hello!
+                        <br /> I'm Silvi. Nice to meet you!
                     </h1>
-                    <h4>I am from Berat(Albania), based in Berlin. Since a little kid,
-                        I have always been fascinated by technology. I have been a gamer and a computer geek since forever.<br />
-                        In my previous experiences, I've worked with different software, from video/subtitle/photo editing programs to CRM software.
-                        While working in the tourism industry as a Tour Organiser and Content Creator, I would catch myself also building websites
-                        using builders from WordPress, Wix, or GoDaddy. I felt like it was time for me to finally follow my true passion.<br />
-                        Ironhack Full Stack Web Development Bootcamp was one of the best experiences of my life.
-                        Had incredible teachers and met amazing creative people.I build my first game using HTML,JS,CSS, and  together with my classmates build fully
-                        functional back end and fullstack webapps.<br /> Now I'm looking for an oportunity to pursue a career as a web developer
-                        ,to help create beautiful websites and transform my passion into a profession.</h4>
+                    <h4>
+                        I am from Berat(Albania), based in Berlin. <br />
+                        Since a little kid, I have always been fascinated by technology.
+                        I have been a gamer and a computer geek since forever.
+                        <br />
+                        In my previous experiences, I've worked with different software,
+                        from video/subtitle/photo editing programs to CRM software.
+                        While working in the tourism industry as a Tour Organiser and Content Creator, I would catch myself also building websites using builders from WordPress, Wix, or GoDaddy.
+                        I felt like it was time for me to finally follow my true passion.
+                        <br />
+                        Ironhack Full Stack Web Development Bootcamp was one of the best
+                        experiences of my life. I had incredible teachers and met amazing,
+                        creative people. I build my first web game, using HTML, JS, CSS,
+                        and together with my classmates, we built fully functional back-end
+                        and full-stack web apps.<br />
+                        Now I'm looking for an opportunity to pursue a career
+                        as a web developer, to help create beautiful websites and
+                        transform my passion into a profession.
+                    </h4>
 
                 </div>
                 <Link id='linkCv' className='shake' to='../Silvi-Sinanaj-CV.pdf' target="_blank" download><b>Download CV</b></Link>
@@ -54,7 +106,7 @@ export default function Homepage(props) {
             <section id='projects' >
                 <h1> My work</h1><br />
                 <div id='allCards'>
-                    <div className='projectCards shake' data-aos="fade-right" >
+                    <div className='projectCards shake' data-aos="fade-top" >
                         <h2>Gotta Win 'Em All</h2>
                         <img className='cardImg' src='../images/pokegame.png' alt='pokGame' />
                         <h3>Technology used</h3>
@@ -68,7 +120,7 @@ export default function Homepage(props) {
                             <a className='projectLink' href='https://github.com/sil-sin/Gotta-Win-Em-All' target="_blank" rel="noreferrer" ><b>Github Repository</b></a>
                         </span>
                     </div>
-                    <div className='projectCards shake' data-aos="fade-bottom" >
+                    <div className='projectCards shake' data-aos="fade-top" >
                         <h2>Silver Tasker</h2>
                         <img className='cardImg' src='../images/silver.png' alt='pokGame' />
                         <h3>Technology used</h3>
@@ -81,7 +133,7 @@ export default function Homepage(props) {
                         </span>
 
                     </div>
-                    <div className='projectCards shake' data-aos="fade-left">
+                    <div className='projectCards shake' data-aos="fade-top">
                         <h2>FoodCafe</h2>
                         <img className='cardImg' src='../images/foodcafe.png' alt='pokGame' />
                         <h3>Technology used</h3>
@@ -108,14 +160,14 @@ export default function Homepage(props) {
             </div>
             <div id='contactMe'>
                 <h1> Lets get in contact</h1>
-                <div id='icons'><a target="_blank" href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn /><br />LinkedIn</a>
-                    <a target="_blank" href='https://github.com/sil-sin' rel="noreferrer"><GitHub /><br />GitHub</a>
-                    <a target="_blank" href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter /><br />Twitter</a>
-                    <a target="_blank" href='mailto:silviberat@gmail.com' rel="noreferrer"><Email /><br />Email</a>
-                    <a target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /><br />WhatsApp</a>
-                    <a target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call /><br />Call</a></div>
+                <div id='icons'><a target="_blank" className='pop' href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn /><br />LinkedIn</a>
+                    <a target="_blank" className='pop' href='https://github.com/sil-sin' rel="noreferrer"><GitHub /><br />GitHub</a>
+                    <a target="_blank" className='pop' href='https://twitter.com/Silsin2' rel="noreferrer"><Twitter /><br />Twitter</a>
+                    <a target="_blank" className='pop' href='mailto:silviberat@gmail.com' rel="noreferrer"><Email /><br />Email</a>
+                    <a target="_blank" className='pop' href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /><br />WhatsApp</a>
+                    <a target="_blank" className='pop' href='tel:+4917671613833' rel="noreferrer"><Call /><br />Call</a></div>
             </div>
             <footer> <a href='mailto:silviberat@gmail.com'>silviberat@gmail.com</a>© <b>Silvi Sinanaj</b>. All Rights Reserved.</footer>
-        </div>
+        </div >
     )
 }

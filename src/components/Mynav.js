@@ -14,7 +14,7 @@ export default function Mynav(props) {
                 <span>
                     <Link to={"#projects"} >Projects</Link>
                 </span>
-                <Brightness4RoundedIcon onClick={onClick} />
+                <Brightness4RoundedIcon className='pop' onClick={onClick} />
             </nav>
         </>
     )
