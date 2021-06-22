@@ -1,9 +1,25 @@
 import { Call, Email, GitHub, LinkedIn, Twitter, WhatsApp } from '@material-ui/icons';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { Button, DialogActions, DialogContent, TextField } from '@material-ui/core';
+import { send } from 'emailjs-com';
+import { init } from 'emailjs-com';
+init("user_CtWs1YzgidOw4pPwk0MKF");
+
 export default function Homepage(props) {
     const { modeSwitch } = props
     const [src, upSrc] = useState('../images/silpic.jpeg')
+    const [error, upError] = useState(false)
+
+    const [toSend, setToSend] = useState({
+        from_name: null,
+        to_name: null,
+        message: null,
+        from_email: null,
+        phone: null,
+        interests: null,
+    });
+
     const mouseOver = () => {
         if (src.includes('silpic.jpeg')) {
             upSrc('../images/ironhacklogo.jpg')
@@ -11,6 +27,45 @@ export default function Homepage(props) {
             upSrc('../images/silpic.jpeg')
         }
     }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { name, email, phone, message } = e.target
+        console.log(email.value.includes('@'))
+        console.log(name.value, email.value, phone.value, message.value)
+        if (!name.value || !email.value || !email.value.includes('@') || !phone.value || !message.value) {
+            console.log('empty')
+            upError(true)
+            setToSend({
+                from_name: null,
+                to_name: null,
+                message: null,
+                from_email: null,
+                phone: null,
+            })
+
+        } else {
+            console.log('senidng')
+            send(
+
+                'service_6xkxi2b',
+                'template_387iwvd',
+                toSend,
+                'user_CtWs1YzgidOw4pPwk0MKF'
+            )
+                .then((response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                })
+                .catch((err) => {
+                    console.log('FAILED...', err);
+                });
+        }
+    };
+
+
+    const handleChange = (e) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
+    };
     return (
         <div id='top' className={modeSwitch}>
             <div id='header'>
@@ -167,6 +222,24 @@ export default function Homepage(props) {
                     <a target="_blank" className='pop' href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /><br />WhatsApp</a>
                     <a target="_blank" className='pop' href='tel:+4917671613833' rel="noreferrer"><Call /><br />Call</a></div>
             </div>
+
+            <form id='contactform' onSubmit={handleSubmit} >
+                <DialogContent>
+                    <TextField autoFocus onChange={handleChange} margin="dense" id="name" label="Name *" type="text" name='from_name' fullWidth />
+                    <TextField autoFocus onChange={handleChange} margin="dense" id="email" label="Email Address *" type="email" name='from_email' fullWidth />
+                    <TextField autoFocus margin="dense" id="phone" onChange={handleChange} label="Phone Number" type="text" name='phone' fullWidth />
+                    <TextField autoFocus multiline margin="dense" id="message" label="Message *" onChange={handleChange} type="text" name='message' fullWidth />
+
+                </DialogContent>
+                <DialogActions>
+                    <Button type='submit' color="primary">
+                        Send
+                    </Button>
+                </DialogActions>
+            </form>
+
+            {error && <div id='error'>Please fill all the required* fields!</div>}
+
             <footer> <a href='mailto:silviberat@gmail.com'>silviberat@gmail.com</a>© <b>Silvi Sinanaj</b>. All Rights Reserved.</footer>
         </div >
     )

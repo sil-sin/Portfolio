@@ -19,8 +19,8 @@ body {
   height: 100%;
 }
 .dark h1,
-h3 {
-  color: #03989e !important;
+.dark h3 {
+  color: #03989e;
 }
 h1,
 h3 {
@@ -320,7 +320,9 @@ a {
   align-items: center;
   border-radius: 0 15px 15px 0;
 }
-
+.socials a {
+  color: whitesmoke !important;
+}
 .contact {
   padding-left: 10px;
   margin-right: 0;
@@ -349,4 +351,21 @@ a {
 footer {
   text-align: center;
   padding-bottom: 40px;
+}
+#error {
+  color: aliceblue;
+  position: fixed;
+  bottom: 10px;
+  left: 40%;
+  background-color: rgba(219, 32, 32, 0.466);
+  font-size: larger;
+  border: solid rgba(39, 2, 2, 0.61);
+  padding: 5px;
+  border-radius: 5px;
+}
+#contactform {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
