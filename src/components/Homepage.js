@@ -171,8 +171,8 @@ function Homepage(props) {
                             levels.
                         </p>
                         <span className=' linksProject' >
-                            <a className='projectLink' href='https://sil-sin.github.io/Gotta-Win-Em-All/' target="_blank" rel="noreferrer" ><b>Website Link</b></a>
-                            <a className='projectLink' href='https://github.com/sil-sin/Gotta-Win-Em-All' target="_blank" rel="noreferrer" ><b>Github Repository</b></a>
+                            <a className='button' href='https://sil-sin.github.io/Gotta-Win-Em-All/' target="_blank" rel="noreferrer" ><b>Website <br /> Link</b></a>
+                            <a className='button' href='https://github.com/sil-sin/Gotta-Win-Em-All' target="_blank" rel="noreferrer" ><b>Github <br /> Repository</b></a>
                         </span>
                     </div>
                     <div className='projectCards shake' data-aos="fade-top" >
@@ -183,8 +183,8 @@ function Homepage(props) {
                         <p>Silver Tasker web application, is a task managing system build with the hotel business model in mind.
                             Using this application, the managers can create and assign tasks to their staff members and keep track of the task status.</p>
                         <span className=' linksProject'>
-                            <a className='projectLink' href='https://silver-tasker.herokuapp.com' target="_blank" rel="noreferrer" ><b>Website Link</b></a>
-                            <a className='projectLink' href='https://github.com/sil-sin/Silver-Tasker' target="_blank" rel="noreferrer" ><b>Github Repository</b></a>
+                            <a className='button' href='https://silver-tasker.herokuapp.com' target="_blank" rel="noreferrer" ><b>Website <br /> Link</b></a>
+                            <a className='button' href='https://github.com/sil-sin/Silver-Tasker' target="_blank" rel="noreferrer" ><b>Github <br /> Repository</b></a>
                         </span>
 
                     </div>
@@ -197,9 +197,9 @@ function Homepage(props) {
                             It's a cozy environment for people to connect around the common interest of food.
                             Users can create their profile,   can find, create, edit, or delete  recipes, and post about their food.</p>
                         <span className=' linksProject'>
-                            <a className='projectLink' href='https://food-cafe.herokuapp.com/' target="_blank" rel="noreferrer" ><b>Website Link</b></a><br />
-                            <a className='projectLink' href='https://github.com/jnmelio/FoodCafe-client' target="_blank" rel="noreferrer" ><b>Client Repository</b></a>
-                            <a className='projectLink' href='https://github.com/jnmelio/FoodCafe-server' target="_blank" rel="noreferrer" ><b>Server Repository</b></a>
+                            <a className='button' href='https://food-cafe.herokuapp.com/' target="_blank" rel="noreferrer" ><b>Website Link</b></a><br />
+                            <a className='button' href='https://github.com/jnmelio/FoodCafe-client' target="_blank" rel="noreferrer" ><b>Client Repository</b></a>
+                            <a className='button' href='https://github.com/jnmelio/FoodCafe-server' target="_blank" rel="noreferrer" ><b>Server Repository</b></a>
                         </span>
                     </div>
                 </div>
@@ -232,9 +232,9 @@ function Homepage(props) {
 
                     </DialogContent>
                     <DialogActions>
-                        <Button type='submit' color="secondary">
+                        <button className='button' type='submit' >
                             Send
-                        </Button>
+                        </button>
                     </DialogActions>
                 </form>
             </div>

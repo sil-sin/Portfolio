@@ -364,7 +364,7 @@ footer {
   position: fixed;
   bottom: 10px;
   left: 40%;
-  background-color: rgba(219, 32, 32, 0.466);
+  background-color: rgb(219, 32, 32);
   font-size: larger;
   border: solid rgba(39, 2, 2, 0.61);
   padding: 5px;
@@ -378,4 +378,27 @@ footer {
 }
 .dark #contactform label {
   color: aliceblue;
+}
+.dark input,
+.dark textarea {
+  color: aliceblue !important;
+}
+.button {
+  border: solid #03989e;
+  border-radius: 10px;
+  padding: 2px 10px;
+  box-shadow: #03539e 0 0 20px 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: small;
+}
+.dark .button {
+  border: solid #03989e;
+  box-shadow: #03539e 0 0 20px 4px;
+  background: transparent;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.linksProject {
+  display: flex;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Brightness4RoundedIcon from '@material-ui/icons/Brightness4Rounded';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Info, AccountTreeOutlined, ContactPhone } from '@material-ui/icons';
+import { Info, AccountTreeOutlined, ContactMail } from '@material-ui/icons';
 
 function Mynav(props) {
     const { onClick, modeSwitch } = props
@@ -23,7 +23,7 @@ function Mynav(props) {
                 <Link className='pop' to={"#contactMe"} >
                     <span>
                         Contact
-                    </span> <ContactPhone />
+                    </span> <ContactMail />
                 </Link>
                 <Link className='pop' onClick={onClick}> {modeSwitch ? <span>Light</span> : <span>Dark</span>} <Brightness4RoundedIcon /></Link>
             </nav >
