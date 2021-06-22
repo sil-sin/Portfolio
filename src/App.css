@@ -54,7 +54,8 @@ a {
     width: 28px;
   }
   nav span {
-    display: none;
+    font-size: 12px;
+    display: block;
   }
 }
 @media (max-width: 320px) {
