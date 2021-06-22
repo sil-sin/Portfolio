@@ -1,7 +1,7 @@
 import { Call, Email, GitHub, LinkedIn, Twitter, WhatsApp } from '@material-ui/icons';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Button, DialogActions, DialogContent, TextField } from '@material-ui/core';
+import { DialogActions, DialogContent, TextField } from '@material-ui/core';
 import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
 init("user_CtWs1YzgidOw4pPwk0MKF");
