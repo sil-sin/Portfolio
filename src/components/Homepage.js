@@ -146,7 +146,7 @@ function Homepage(props) {
                         <br />
                         Ironhack Full Stack Web Development Bootcamp was one of the best
                         experiences of my life. I had incredible teachers and met amazing,
-                        creative people. I build my first web game, using HTML, JS, CSS,
+                        creative people. I built my first web game, using HTML, JS, CSS,
                         and together with my classmates, we built fully functional back-end
                         and full-stack web apps.<br />
                         Now I'm looking for an opportunity to pursue a career
