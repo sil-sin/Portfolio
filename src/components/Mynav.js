@@ -11,7 +11,7 @@ function Mynav(props) {
 
         <>
             <nav className={`${modeSwitch} navbar`}>
-                <Link className='pop' to='#top'><img id='logoSS' src='../logosil.png' alt='logo' /></Link>
+                <Link to='#top'><img id='logoSS' src='../logosil.png' alt='logo' /></Link>
 
                 <Link className='pop' to="#about" >  <span> About</span><Info /> </Link>
 
