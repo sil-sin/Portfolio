@@ -225,10 +225,10 @@ function Homepage(props) {
 
                 <form id='contactform' onSubmit={handleSubmit} >
                     <DialogContent >
-                        <TextField autoFocus onChange={handleChange} margin="dense" id="name" label="Name " type="text" name='from_name' fullWidth />
-                        <TextField autoFocus onChange={handleChange} margin="dense" id="email" label="Email Address " type="email" name='from_email' fullWidth />
-                        <TextField autoFocus margin="dense" id="phone" onChange={handleChange} label="Phone Number" type="text" name='phone' fullWidth />
-                        <TextField autoFocus multiline margin="dense" id="message" label="Message " onChange={handleChange} type="text" name='message' fullWidth />
+                        <TextField onChange={handleChange} margin="dense" id="name" label="Name " type="text" name='from_name' fullWidth />
+                        <TextField onChange={handleChange} margin="dense" id="email" label="Email Address " type="email" name='from_email' fullWidth />
+                        <TextField margin="dense" id="phone" onChange={handleChange} label="Phone Number" type="text" name='phone' fullWidth />
+                        <TextField multiline margin="dense" id="message" label="Message " onChange={handleChange} type="text" name='message' fullWidth />
 
                     </DialogContent>
                     <DialogActions>
