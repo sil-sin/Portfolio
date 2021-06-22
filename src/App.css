@@ -53,6 +53,9 @@ a {
   .socials {
     width: 28px;
   }
+  nav span {
+    display: none;
+  }
 }
 @media (max-width: 320px) {
   body {
@@ -147,6 +150,9 @@ a {
   }
 }
 .navbar {
+  position: sticky;
+  top: -1px;
+  z-index: 12000;
   display: flex;
   justify-content: flex-end;
   height: 50px;
@@ -368,4 +374,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.dark #contactform label {
+  color: aliceblue;
 }

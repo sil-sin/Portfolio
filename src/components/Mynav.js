@@ -1,22 +1,34 @@
 import React from 'react'
 import Brightness4RoundedIcon from '@material-ui/icons/Brightness4Rounded';
 import { HashLink as Link } from 'react-router-hash-link';
+import { Info, AccountTreeOutlined, ContactPhone } from '@material-ui/icons';
 
-export default function Mynav(props) {
+function Mynav(props) {
     const { onClick, modeSwitch } = props
+
+
     return (
+
         <>
             <nav className={`${modeSwitch} navbar`}>
-                <Link to='#top'><img id='logoSS' src='../logosil.png' alt='logo' /></Link>
-                <span>
-                    <Link to="#about" >About</Link>
-                </span>
-                <span>
-                    <Link to={"#projects"} >Projects</Link>
-                </span>
-                <Brightness4RoundedIcon className='pop' onClick={onClick} />
-            </nav>
+                <Link className='pop' to='#top'><img id='logoSS' src='../logosil.png' alt='logo' /></Link>
+
+                <Link className='pop' to="#about" >  <span> About</span><Info /> </Link>
+
+                <Link className='pop' to={"#projects"} >
+                    <span>
+                        Projects
+                    </span> <AccountTreeOutlined />
+                </Link>
+                <Link className='pop' to={"#contactMe"} >
+                    <span>
+                        Contact
+                    </span> <ContactPhone />
+                </Link>
+                <Link className='pop' onClick={onClick}> {modeSwitch ? <span>Light</span> : <span>Dark</span>} <Brightness4RoundedIcon /></Link>
+            </nav >
         </>
     )
 }
 
+export default Mynav

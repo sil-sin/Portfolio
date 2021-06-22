@@ -6,7 +6,7 @@ import { send } from 'emailjs-com';
 import { init } from 'emailjs-com';
 init("user_CtWs1YzgidOw4pPwk0MKF");
 
-export default function Homepage(props) {
+function Homepage(props) {
     const { modeSwitch } = props
     const [src, upSrc] = useState('../images/silpic.jpeg')
     const [error, upError] = useState(false)
@@ -129,7 +129,7 @@ export default function Homepage(props) {
                 </div>
             </div>
 
-            <section id='about' >
+            <section id='about' data-aos="fade-in">
                 <div className='aboutTxt'>
                     <h1> Hello!
                         <br /> I'm Silvi. Nice to meet you!
@@ -213,7 +213,8 @@ export default function Homepage(props) {
                 <a className='shake' target="_blank" href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /></a>
                 <a className='shake' target="_blank" href='tel:+4917671613833' rel="noreferrer"><Call /></a>
             </div>
-            <div id='contactMe'>
+            <div id='contactMe' data-aos="fade-in">
+                <br />
                 <h1> Lets get in contact</h1>
                 <div id='icons'><a target="_blank" className='pop' href='https://www.linkedin.com/in/silvi-sinanaj' rel="noreferrer"><LinkedIn /><br />LinkedIn</a>
                     <a target="_blank" className='pop' href='https://github.com/sil-sin' rel="noreferrer"><GitHub /><br />GitHub</a>
@@ -221,22 +222,22 @@ export default function Homepage(props) {
                     <a target="_blank" className='pop' href='mailto:silviberat@gmail.com' rel="noreferrer"><Email /><br />Email</a>
                     <a target="_blank" className='pop' href='https://wa.me/4917671613833' rel="noreferrer"><WhatsApp /><br />WhatsApp</a>
                     <a target="_blank" className='pop' href='tel:+4917671613833' rel="noreferrer"><Call /><br />Call</a></div>
+
+                <form id='contactform' onSubmit={handleSubmit} >
+                    <DialogContent >
+                        <TextField autoFocus onChange={handleChange} margin="dense" id="name" label="Name " type="text" name='from_name' fullWidth />
+                        <TextField autoFocus onChange={handleChange} margin="dense" id="email" label="Email Address " type="email" name='from_email' fullWidth />
+                        <TextField autoFocus margin="dense" id="phone" onChange={handleChange} label="Phone Number" type="text" name='phone' fullWidth />
+                        <TextField autoFocus multiline margin="dense" id="message" label="Message " onChange={handleChange} type="text" name='message' fullWidth />
+
+                    </DialogContent>
+                    <DialogActions>
+                        <Button type='submit' color="secondary">
+                            Send
+                        </Button>
+                    </DialogActions>
+                </form>
             </div>
-
-            <form id='contactform' onSubmit={handleSubmit} >
-                <DialogContent>
-                    <TextField autoFocus onChange={handleChange} margin="dense" id="name" label="Name *" type="text" name='from_name' fullWidth />
-                    <TextField autoFocus onChange={handleChange} margin="dense" id="email" label="Email Address *" type="email" name='from_email' fullWidth />
-                    <TextField autoFocus margin="dense" id="phone" onChange={handleChange} label="Phone Number" type="text" name='phone' fullWidth />
-                    <TextField autoFocus multiline margin="dense" id="message" label="Message *" onChange={handleChange} type="text" name='message' fullWidth />
-
-                </DialogContent>
-                <DialogActions>
-                    <Button type='submit' color="primary">
-                        Send
-                    </Button>
-                </DialogActions>
-            </form>
 
             {error && <div id='error'>Please fill all the required* fields!</div>}
 
@@ -244,3 +245,5 @@ export default function Homepage(props) {
         </div >
     )
 }
+
+export default Homepage
