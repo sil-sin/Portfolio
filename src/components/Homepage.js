@@ -61,7 +61,7 @@ function Homepage(props) {
                     // eslint-disable-next-line no-unused-vars
                     const timeId = setTimeout(() => {
                         upSuccess(false)
-                    }, 3000)
+                    }, 4000)
                     // eslint-disable-next-line no-unused-vars
                     const timedId = setTimeout(() => {
                         window.location.reload();

@@ -368,13 +368,15 @@ footer {
 #error {
   color: aliceblue;
   position: fixed;
-  bottom: 10px;
-  left: 40%;
+  bottom: 100px;
   background-color: rgb(219, 32, 32);
   font-size: larger;
   border: solid rgba(39, 2, 2, 0.61);
   padding: 5px;
   border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 #contactform {
   flex-direction: column;
@@ -422,7 +424,7 @@ footer {
  #success{
   color: rgb(0, 11, 20);
   position: fixed;
-  bottom: 50px;
+  bottom: 100px;
   background-color: rgba(32, 219, 132, 0.336);
   font-size: larger;
   border: solid rgba(58, 255, 147, 0.61);
