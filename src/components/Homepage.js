@@ -10,6 +10,7 @@ function Homepage(props) {
     const { modeSwitch } = props
     const [src, upSrc] = useState('../images/silpic.jpeg')
     const [error, upError] = useState(false)
+    const [success, upSuccess] = useState(false)
 
     const [toSend, setToSend] = useState({
         from_name: null,
@@ -45,7 +46,7 @@ function Homepage(props) {
             })
 
         } else {
-            console.log('senidng')
+            console.log('sending')
             send(
 
                 'service_6xkxi2b',
@@ -55,7 +56,17 @@ function Homepage(props) {
             )
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
-                    window.location.reload();
+
+                    upSuccess(true)
+                    // eslint-disable-next-line no-unused-vars
+                    const timeId = setTimeout(() => {
+                        upSuccess(false)
+                    }, 3000)
+                    // eslint-disable-next-line no-unused-vars
+                    const timedId = setTimeout(() => {
+                        window.location.reload();
+                    }, 500)
+
 
                 })
                 .catch((err) => {
@@ -66,7 +77,10 @@ function Homepage(props) {
 
 
     const handleChange = (e) => {
+
+        console.log(e.target.name, e.target.value)
         setToSend({ ...toSend, [e.target.name]: e.target.value });
+        upError(false)
     };
     return (
         <div id='top' className={modeSwitch}>
@@ -241,8 +255,8 @@ function Homepage(props) {
                 </form>
             </div>
 
-            {error && <div id='error'>Please fill all the required* fields!</div>}
-
+            {error && <div id='error'>Please fill all the fields!</div>}
+            {success && <div id='success'>Email was sent succesfully</div>}
             <footer> <a href='mailto:silviberat@gmail.com'>silviberat@gmail.com</a>© <b>Silvi Sinanaj</b>. All Rights Reserved.</footer>
         </div >
     )
