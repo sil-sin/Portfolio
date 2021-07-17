@@ -171,11 +171,14 @@ a {
   position: relative;
   max-width: 230px;
   width: 100%;
+  
+
 }
 .hex:before {
   content: "";
   display: block;
-  padding-bottom: 115%;
+  padding-bottom: 115%;   
+
 }
 .hex img {
   left: 50%;
@@ -183,6 +186,7 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 115%;
+  
 }
 .hex__shape {
   position: absolute;
@@ -193,6 +197,7 @@ a {
   top: 0;
   transform: rotate(240deg);
   width: 100%;
+  
 }
 
 .sectionCard {
@@ -403,3 +408,5 @@ footer {
 .linksProject {
   display: flex;
 }
+
+

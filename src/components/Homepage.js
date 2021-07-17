@@ -55,6 +55,8 @@ function Homepage(props) {
             )
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text);
+                    window.location.reload();
+
                 })
                 .catch((err) => {
                     console.log('FAILED...', err);
