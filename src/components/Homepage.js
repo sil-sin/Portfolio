@@ -256,7 +256,7 @@ function Homepage(props) {
             </div>
 
             {error && <div id='error'>Please fill all the fields!</div>}
-            {success && <div id='success'>Email was sent succesfully</div>}
+            {success && <div id='success'>Message was sent succesfully</div>}
             <footer> <a href='mailto:silviberat@gmail.com'>silviberat@gmail.com</a>© <b>Silvi Sinanaj</b>. All Rights Reserved.</footer>
         </div >
     )
