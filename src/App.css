@@ -1,3 +1,6 @@
+:root{
+  margin:0;
+}
 body {
   color: rgb(31, 31, 49);
   background: linear-gradient(
@@ -5,18 +8,15 @@ body {
     rgb(255, 255, 255) 27%,
     rgba(222, 235, 255, 0.5) 100%
   );
-  height: 100%;
-  width: 100% !important;
+  overflow: hidden;
 }
 .dark {
   color: rgb(222, 237, 255);
-  background: rgb(2, 21, 37, 1);
   background: linear-gradient(
     180deg,
     rgba(2, 21, 37, 1) 100%,
     rgba(19, 19, 19, 1) 0%
   );
-  height: 100%;
 }
 .dark h1,
 .dark h3 {
@@ -61,26 +61,13 @@ a {
 @media (max-width: 320px) {
   body {
     font-size: smaller;
-    margin-right: -10px;
-    padding-right: -10px;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  div,
-  .sectionCard {
-    font-size: smaller;
-    margin: 0 !important;
+
   }
   .socials a {
     width: 50%;
   }
   .socials {
-    width: 35px !important;
+    width: 35px;
   }
 }
 
