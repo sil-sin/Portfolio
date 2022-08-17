@@ -8,7 +8,7 @@ body {
     rgb(255, 255, 255) 27%,
     rgba(222, 235, 255, 0.5) 100%
   );
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .dark {
   color: rgb(222, 237, 255);
